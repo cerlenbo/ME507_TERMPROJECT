@@ -37,5 +37,11 @@ The movement task was used to control the movement of the robot by processing th
 
 The robot starts out by advancing to a set point from the encoders which results in it exiting the bay. The robot then turns about 60 degrees based on enncoder set points to face tangent to the arena middle circle. Next, the robot does circle around the arena with the flywheels running to collect balls. This circle path is accomplished by setting the duty cycle of the left and right wheel motors. Finally, the robot returns to the home bay based on the heading information from the IMU.
 
+![Movement Task FSM](task1.png)
+
+
+
 ### Sorting Task
 The sorting task processes the color sensor data to send position set points to the servo motor to sort the ping pong balls accordingly. The state transition diagram for this task can be referenced below.
+
+![Sorting Task FSM](task2.png)
